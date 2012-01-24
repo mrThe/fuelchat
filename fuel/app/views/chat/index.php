@@ -1,6 +1,5 @@
 <h2>Listing Chats</h2>
 <br>
-<?php if ($chats): ?>
 <table class="zebra-striped">
 	<thead>
 		<tr>
@@ -19,10 +18,7 @@
 	</tbody>
 </table>
 
-<?php else: ?>
-<p>No Messages.</p>
 
-<?php endif; ?><p>
 	
 <script>
 var lastMessage=<?php echo $lastmessage; ?>; //global

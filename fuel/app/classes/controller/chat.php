@@ -6,6 +6,7 @@ class Controller_Chat extends Controller_Template
 	{
 		$data['chats'] = Model_Chat::find('all');
 		$data['lastmessage'] = Model_Chat::find()->max('id');
+		if(empty($data['lastmessage'])) $data['lastmessage']=0;
 		$data['path'] = Config::get('base_url');
 		$this->template->title = "Chat";
 		$this->template->content = View::forge('chat/index', $data);
