@@ -1,6 +1,5 @@
 <h2>Listing Chats</h2>
 <br>
-<?php echo $path; ?>
 <?php if ($chats): ?>
 <table class="zebra-striped">
 	<thead>
